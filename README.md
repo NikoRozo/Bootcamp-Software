@@ -33,6 +33,7 @@ Src:
 Test:
 
 Proyecto 5 - Juego del 15
+
 Conceptos: Estructuras de Datos: List, Set, Map y Queue. Implementaciones más comunes en Java.
 
 Src:  
@@ -40,6 +41,7 @@ Src:
 Test:
 
 Proyecto 6 - Blackjack
+
 Conceptos: Herencia, Interfaces y Clases Abstractas. Polimorfismo. Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP) y DIP (Dependency Inversion Principle).
 
 Src:  
@@ -47,6 +49,7 @@ Src:
 Test:
 
 Proyecto 7 - Redimensionador de Imágenes
+
 Conceptos: Estrategias para el manejo de errores. Excepciones Checked y Unchecked. Asserts, AssertionError y Error.
 
 Src:  
