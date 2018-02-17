@@ -1,4 +1,4 @@
-package com.bootcamp.nico.fraciones;
+package com.bootcamp.nico.fracciones;
 
 import com.bootcamp.nico.fracciones.Fraccion;
 import org.junit.Test;
