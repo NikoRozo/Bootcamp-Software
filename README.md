@@ -12,9 +12,9 @@ Proyecto 2 - Fracciones
 
 Conceptos: Tipos de Datos, Métodos y Atributos. Encapsulamiento e Inmutabilidad. Constructores y Fábricas.
 
-Src:  
+Src:  https://github.com/NikoRozo/Bootcamp-Software/tree/master/src/main/java/com/bootcamp/nico/fracciones
 
-Test:
+Test: https://github.com/NikoRozo/Bootcamp-Software/tree/master/src/test/java/com/bootcamp/nico/fracciones
 
 Proyecto 3 - Juego de la Vida de Conway
 
