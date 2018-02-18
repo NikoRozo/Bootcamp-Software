@@ -20,9 +20,9 @@ Proyecto 3 - Juego de la Vida de Conway
 
 Conceptos: Archivos (NIO2), Enums y Arreglos.
 
-Src:  
+Src:  https://github.com/NikoRozo/Bootcamp-Software/tree/master/src/main/java/com/bootcamp/nico/juegoDeLaVida
 
-Test:
+Test: https://github.com/NikoRozo/Bootcamp-Software/tree/master/src/test/java/com/bootcamp/nico/juegoDeLaVida
 
 Proyecto 4 - Picas y Fijas
 
