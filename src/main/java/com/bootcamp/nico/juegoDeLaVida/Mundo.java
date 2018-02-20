@@ -30,19 +30,19 @@ public final class Mundo {
         return new Celula.Builder().withEstaViva(estaviva).build();
     }
 
-    public static boolean isSobrevive(final Celula[][] vecinos) {
-        int noVecinos = vecinosVivos(vecinos);
-        boolean estaviva = vecinos[1][1].isEstaViva() && (noVecinos >= 2 && noVecinos <= 3);
-        return estaviva;
-    }
+//    public static boolean isSobrevive(final Celula[][] vecinos) {
+//        int noVecinos = vecinosVivos(vecinos);
+//        boolean estaviva = vecinos[1][1].isEstaViva() && (noVecinos >= 2 && noVecinos <= 3);
+//        return estaviva;
+//    }
 
     public static boolean isMuere(final Celula[][] vecinos) {
         int noVecinos = vecinosVivos(vecinos);
-        boolean estaviva = (vecinos[1][1].isEstaViva() && (noVecinos < 2 && noVecinos > 3));
+        boolean estaviva = !(vecinos[1][1].isEstaViva() && (noVecinos < 2 || noVecinos > 3));
         return estaviva;
     }
 
-    public static boolean isRevive(final Celula[][] vecinos) {
+    public static boolean isVive(final Celula[][] vecinos) {
         int noVecinos = vecinosVivos(vecinos);
         boolean estaviva = !vecinos[1][1].isEstaViva() && (noVecinos == 3);
         return estaviva;
@@ -75,7 +75,7 @@ public final class Mundo {
         for (int i = 0; i < 8; ++i) {
             int nx = ejeX + dx[i];
             int ny = ejeY + dy[i];
-            if (ny >= 0 && nx >= 0) {
+            if (ny >= 0 && nx >= 0 && nx < mundo.size() && ny < mundo.get(0).size()) {
                 vecinos[posicionX[i]][posicionY[i]] = mundo.get(nx).get(ny);
             } else {
                 vecinos[posicionX[i]][posicionY[i]] =  new Celula.Builder().withEstaViva(false).build();

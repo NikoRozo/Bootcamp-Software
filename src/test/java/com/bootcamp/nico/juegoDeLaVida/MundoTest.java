@@ -39,13 +39,13 @@ public class MundoTest {
         subMundo[2][0] = new Celula.Builder().withEstaViva(true).build();
         subMundo[2][1] = new Celula.Builder().withEstaViva(false).build();
         subMundo[2][2] = new Celula.Builder().withEstaViva(true).build();
-        assertThat(new Celula.Builder().withEstaViva(true).build(), equalTo(new Celula.Builder().withEstaViva(Mundo.isSobrevive(subMundo)).build()));
+        assertThat(new Celula.Builder().withEstaViva(true).build(), equalTo(new Celula.Builder().withEstaViva(Mundo.isMuere(subMundo)).build()));
     }
     
     @Test
     public void ValidarMas3VecinosVivos_MuerePorSorepoblacion(){
         Celula[][] subMundo = new Celula[3][3];
-        subMundo[0][0] = new Celula.Builder().withEstaViva(false).build();
+        subMundo[0][0] = new Celula.Builder().withEstaViva(true).build();
         subMundo[0][1] = new Celula.Builder().withEstaViva(false).build();
         subMundo[0][2] = new Celula.Builder().withEstaViva(true).build();
         subMundo[1][0] = new Celula.Builder().withEstaViva(false).build();
@@ -69,7 +69,7 @@ public class MundoTest {
         subMundo[2][0] = new Celula.Builder().withEstaViva(true).build();
         subMundo[2][1] = new Celula.Builder().withEstaViva(false).build();
         subMundo[2][2] = new Celula.Builder().withEstaViva(true).build();
-        assertThat(new Celula.Builder().withEstaViva(true).build(), equalTo(new Celula.Builder().withEstaViva(Mundo.isRevive(subMundo)).build()));
+        assertThat(new Celula.Builder().withEstaViva(true).build(), equalTo(new Celula.Builder().withEstaViva(Mundo.isVive(subMundo)).build()));
     }
     
 }
