@@ -18,16 +18,13 @@ public class Celula {
     public char getCaracter(){
         return this.caracter;
     }
-    
-    public void setCaracter(final boolean estaviva){
-        this.caracter = (estaviva) ? '*' : '.';
-    }
 
     public boolean isEstaViva() {
         return estaViva;
     }
 
     public void setEstaViva(final boolean estaViva) {
+        this.caracter = (estaViva) ? '*' : '.';
         this.estaViva = estaViva;
     }
     
@@ -79,12 +76,13 @@ public class Celula {
         public Builder withCaracter(final char caracter) {
             checkArgument(caracter == '*' || caracter == '.' , "Una Celula solo puede estar Viva (*) o Muerta (.)");
             this.caracter = caracter;
-            this.estaViva = false;
+            this.estaViva = (caracter == '*');
             return this;
         }
 
         public Builder withEstaViva(final boolean estaViva) {
             this.estaViva = estaViva;
+            this.caracter = (estaViva) ? '*' : '.';
             return this;
         }
 
